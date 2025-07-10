@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://O-Datsch.github.io/test_project/sitemap.xml
