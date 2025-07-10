@@ -25,3 +25,20 @@ a:hover {
 nav {
   margin-top: 1rem;
 }
+
+nav {
+  margin-bottom: 1rem;
+}
+
+nav a {
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+input[type="search"] {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}

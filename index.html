@@ -9,19 +9,44 @@
 </head>
 <body>
   <header>
+    <nav>
+      <a href="index.html">Startseite</a>
+    </nav>
     <h1>Glossar für Maschinelles Lernen</h1>
     <p>Wichtige Begriffe einfach erklärt.</p>
+    <input
+      type="search"
+      id="search"
+      placeholder="Glossar durchsuchen..."
+      aria-label="Glossar durchsuchen"
+    />
   </header>
   <main>
     <h2>Glossar-Einträge</h2>
-    <ul>
+    <ul id="glossar-list">
       <li><a href="begriffe/bias.html">Bias</a></li>
       <li><a href="begriffe/overfitting.html">Overfitting</a></li>
       <li><a href="begriffe/variance.html">Variance</a></li>
+      <!-- weitere Begriffe hier -->
     </ul>
   </main>
   <footer>
     <p>© 2025 Dein Name</p>
   </footer>
+
+  <script>
+    // Einfache Suchfunktion
+    const searchInput = document.getElementById('search');
+    const glossarList = document.getElementById('glossar-list');
+    const items = glossarList.getElementsByTagName('li');
+
+    searchInput.addEventListener('input', function () {
+      const filter = this.value.toLowerCase();
+      for (const item of items) {
+        const text = item.textContent.toLowerCase();
+        item.style.display = text.includes(filter) ? '' : 'none';
+      }
+    });
+  </script>
 </body>
 </html>
