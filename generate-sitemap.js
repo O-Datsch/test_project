@@ -1,5 +1,5 @@
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
 
 const baseUrl = 'https://o-datsch.github.io/test_project'; // <-- URL deiner GitHub Pages Seite
 const publicDir = './'; // Projektverzeichnis

@@ -7,8 +7,8 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const inputDir = path.join(__dirname, 'eintraege');
-const outputDir = path.join(__dirname, 'seiten');
+const inputDir = path.join(__dirname, 'markdown');
+const outputDir = path.join(__dirname, 'docs');
 
 fs.readdirSync(inputDir).forEach(file => {
   if (file.endsWith('.md')) {

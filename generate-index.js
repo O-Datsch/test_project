@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { marked } from 'marked';
 
-const contentDir = './eintraege';
+const contentDir = './markdown';
 const outputDir = './';
 const templateDir = './templates';
 
@@ -23,7 +23,7 @@ files.forEach(filename => {
 
   listItems += `
     <li class="glossar-card">
-      <a href="seiten/${slug}.html">
+      <a href="docs/${slug}.html">
         <h3>${title}</h3>
         <p>${preview}</p>
         <span class="category-tag">Allgemein</span>

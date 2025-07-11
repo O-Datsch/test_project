@@ -20,6 +20,9 @@ jobs:
     - name: Install dependencies
       run: npm install
 
+    - name: Generate Index
+      run: node generate-index.js
+
     - name: Generate HTML pages from Markdown
       run: node generate-html.js
 

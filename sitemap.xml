@@ -2,21 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://o-datsch.github.io/test_project/begriffe/bias.html</loc>
+    <loc>https://o-datsch.github.io/test_project/docs/bias.html</loc>
     <lastmod>2025-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://o-datsch.github.io/test_project/begriffe/overfitting.html</loc>
+    <loc>https://o-datsch.github.io/test_project/docs/clustering.html</loc>
     <lastmod>2025-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://o-datsch.github.io/test_project/begriffe/variance.html</loc>
+    <loc>https://o-datsch.github.io/test_project/docs/pca.html</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://o-datsch.github.io/test_project/docs/precision.html</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://o-datsch.github.io/test_project/docs/recall.html</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://o-datsch.github.io/test_project/docs/regularisation.html</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://o-datsch.github.io/test_project/docs/regularization.html</loc>
     <lastmod>2025-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -30,14 +58,21 @@
   </url>
 
   <url>
-    <loc>https://o-datsch.github.io/test_project/rocket.html</loc>
+    <loc>https://o-datsch.github.io/test_project/node_modules/sprintf-js/demo/angular.html</loc>
     <lastmod>2025-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://o-datsch.github.io/test_project/seiten/bias.html</loc>
+    <loc>https://o-datsch.github.io/test_project/templates/footer.html</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://o-datsch.github.io/test_project/templates/header.html</loc>
     <lastmod>2025-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
