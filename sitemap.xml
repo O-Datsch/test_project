@@ -1,24 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
-    <loc>https://O-Datsch.github.io/ml-glossar/</loc>
+    <loc>https://o-datsch.github.io/test_project/begriffe/bias.html</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://o-datsch.github.io/test_project/begriffe/overfitting.html</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://o-datsch.github.io/test_project/begriffe/variance.html</loc>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://o-datsch.github.io/test_project/</loc>
+    <lastmod>2025-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+
   <url>
-    <loc>https://O-Datsch.github.io/ml-glossar/begriffe/bias.html</loc>
+    <loc>https://o-datsch.github.io/test_project/rocket.html</loc>
+    <lastmod>2025-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://O-Datsch.github.io/ml-glossar/begriffe/overfitting.html</loc>
+    <loc>https://o-datsch.github.io/test_project/seiten/bias.html</loc>
+    <lastmod>2025-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://O-Datsch.github.io/ml-glossar/begriffe/variance.html</loc>
+    <loc>https://o-datsch.github.io/test_project/templates/layout.html</loc>
+    <lastmod>2025-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
