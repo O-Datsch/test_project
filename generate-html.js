@@ -1,32 +1,49 @@
-const fs = require('fs');
-const path = require('path');
-const { marked } = require('marked');
+import fs from 'fs';
+import path from 'path';
+import { marked } from 'marked';
+import matter from 'gray-matter';
+import { fileURLToPath } from 'url';
 
-const inputDir = 'eintraege';
-const outputDir = 'seiten';
-const layoutPath = 'templates/layout.html';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-const layout = fs.readFileSync(layoutPath, 'utf-8');
-if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir);
+const inputDir = path.join(__dirname, 'eintraege');
+const outputDir = path.join(__dirname, 'seiten');
 
-const files = fs.readdirSync(inputDir).filter(f => f.endsWith('.md'));
+fs.readdirSync(inputDir).forEach(file => {
+  if (file.endsWith('.md')) {
+    const raw = fs.readFileSync(path.join(inputDir, file), 'utf-8');
 
-files.forEach(file => {
-  const md = fs.readFileSync(path.join(inputDir, file), 'utf-8');
-  const html = marked.parse(md);
+    // Frontmatter extrahieren
+    const { content, data } = matter(raw);
+    
+    // Markdown zu HTML
+    const body = marked(content);
 
-  const titleMatch = md.match(/^# (.+)/);
-  const title = titleMatch ? titleMatch[1] : 'Glossar-Eintrag';
+    // Optional: Titel aus Frontmatter verwenden, sonst Dateiname
+    const title = data.title || file.replace(/\.md$/, '');
 
-  const contentText = md.replace(/^#.+\n/, '').slice(0, 160).trim();
-  const description = contentText.replace(/\n/g, ' ');
+    // Einfaches HTML-Template
+    const fullHtml = `
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>${title}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="${data.description || ''}">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <main class="container">
+    ${body}
+  </main>
+</body>
+</html>`;
 
-  const finalHtml = layout
-    .replace('{{title}}', title)
-    .replace('{{description}}', description)
-    .replace('{{content}}', html);
-
-  const outputFilename = file.replace('.md', '.html');
-  fs.writeFileSync(path.join(outputDir, outputFilename), finalHtml);
-  console.log(`✅ ${outputFilename} generiert`);
+    // Zieldatei
+    const outName = data.filename || file.replace(/\.md$/, '.html');
+    fs.writeFileSync(path.join(outputDir, outName), fullHtml);
+    console.log(`✔ ${outName} erzeugt`);
+  }
 });

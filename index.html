@@ -4,184 +4,58 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ML Glossar | Maschinelles Lernen verständlich erklärt</title>
-  <meta name="description" content="Umfassendes Glossar zu maschinellem Lernen – wichtige Begriffe einfach und verständlich erklärt." />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+  <meta name="description" content="Glossar zu maschinellem Lernen – wichtige Begriffe verständlich erklärt." />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header>
-    <div class="container">
-      <nav>
-        <a href="index.html" class="logo">ML Glossar</a>
-        <div class="nav-links">
-          <a href="index.html">Startseite</a>
-          <a href="kategorien.html">Kategorien</a>
-          <a href="ueber.html">Über</a>
-          <a href="beitragen.html">Mitwirken</a>
-        </div>
-      </nav>
-      <h1>Glossar für Maschinelles Lernen</h1>
-      <p class="subtitle">Wichtige Begriffe einfach und verständlich erklärt</p>
-      <div class="search-container">
-        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="11" cy="11" r="8"></circle>
-          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-        </svg>
-        <input
-          type="search"
-          id="search"
-          placeholder="Begriffe durchsuchen..."
-          aria-label="Glossar durchsuchen"
-        />
-      </div>
-    </div>
-  </header>
+  <header><h1>ML Glossar</h1></header>
+  <main><h2>Begriffe</h2>
+<ul id="glossar-list">
 
-  <main class="container">
-    <div class="glossar-header">
-      <h2>Alle Einträge</h2>
-      <div class="sort-options">
-        <button class="sort-btn active" data-sort="az">A-Z</button>
-        <button class="sort-btn" data-sort="newest">Neueste</button>
-        <button class="sort-btn" data-sort="popular">Beliebteste</button>
-      </div>
-    </div>
-
-    <ul id="glossar-list">
-      <li class="glossar-card">
-        <a href="begriffe/bias.html">
-          <h3>Bias</h3>
-          <p>Systematische Verzerrung in Daten oder Algorithmen, die zu unfairen Ergebnissen führen kann.</p>
-          <span class="category-tag">Grundlagen</span>
-        </a>
-      </li>
-      <li class="glossar-card">
-        <a href="begriffe/overfitting.html">
-          <h3>Overfitting</h3>
-          <p>Wenn ein Modell die Trainingsdaten zu genau lernt und schlecht auf neue Daten generalisiert.</p>
-          <span class="category-tag">Modellierung</span>
-        </a>
-      </li>
-      <li class="glossar-card">
-        <a href="seiten/bias.html">
-          <h3>Variance</h3>
-          <p>Maß dafür, wie stark die Vorhersagen eines Modells bei unterschiedlichen Trainingsdaten variieren.</p>
-          <span class="category-tag">Modellierung</span>
-        </a>
-      </li>
-      <li class="glossar-card">
-        <a href="begriffe/neural-network.html">
-          <h3>Neuronales Netz</h3>
-          <p>Ein aus Neuronen aufgebautes Modell, das inspiriert ist von der Funktionsweise des menschlichen Gehirns.</p>
-          <span class="category-tag">Deep Learning</span>
-        </a>
-      </li>
-      <li class="glossar-card">
-        <a href="begriffe/gradient-descent.html">
-          <h3>Gradient Descent</h3>
-          <p>Optimierungsalgorithmus, der schrittweise Parameter anpasst, um die Fehlerfunktion zu minimieren.</p>
-          <span class="category-tag">Optimierung</span>
-        </a>
-      </li>
-      <li class="glossar-card">
-        <a href="begriffe/random-forest.html">
-          <h3>Random Forest</h3>
-          <p>Ensemble-Methode, die viele Entscheidungsbäume kombiniert, um robustere Vorhersagen zu treffen.</p>
-          <span class="category-tag">Algorithmen</span>
-        </a>
-      </li>
-      <!-- Weitere Begriffe hier -->
-    </ul>
+    <li class="glossar-card">
+      <a href="seiten/bias.html">
+        <h3>Bias</h3>
+        <p> Bias ist ein systematischer Fehler im Modell, der zu verzerrten Vorhersagen führt.  ## Beispiel  Ein klassifizierender Algorithmus bevorzugt ein</p>
+        <span class="category-tag">Allgemein</span>
+      </a>
+    </li>
+    <li class="glossar-card">
+      <a href="seiten/clustering.html">
+        <h3>Unbenannt</h3>
+        <p>title: Clustering category: Unsupervised Learning filename: clustering.html ---  **Clustering** ist ein unüberwachtes Lernverfahren, das Daten in</p>
+        <span class="category-tag">Allgemein</span>
+      </a>
+    </li>
+    <li class="glossar-card">
+      <a href="seiten/pca.html">
+        <h3>Unbenannt</h3>
+        <p>title: Hauptkomponentenanalyse (PCA) category: Dimensionalitätsreduktion filename: pca.html ---  Die **PCA** ist eine Technik zur Reduktion der D</p>
+        <span class="category-tag">Allgemein</span>
+      </a>
+    </li>
+    <li class="glossar-card">
+      <a href="seiten/precision.html">
+        <h3>Unbenannt</h3>
+        <p>title: Precision category: Bewertung filename: precision.html ---  **Precision** ist der Anteil der tatsächlich relevanten positiven Vorhersagen </p>
+        <span class="category-tag">Allgemein</span>
+      </a>
+    </li>
+    <li class="glossar-card">
+      <a href="seiten/recall.html">
+        <h3>Unbenannt</h3>
+        <p>title: Recall category: Bewertung filename: recall.html ---  **Recall** (auch Sensitivität) ist der Anteil der korrekt erkannten positiven Fälle:</p>
+        <span class="category-tag">Allgemein</span>
+      </a>
+    </li>
+    <li class="glossar-card">
+      <a href="seiten/regularisation.html">
+        <h3>Unbenannt</h3>
+        <p>title: Regularisierung category: Optimierung filename: regularization.html ---  **Regularisierung** ist eine Technik, um Overfitting zu verhinder</p>
+        <span class="category-tag">Allgemein</span>
+      </a>
+    </li>
+</ul>
   </main>
-
-  <footer>
-    <div class="container">
-      <p>© 2025 ML Glossar | <a href="impressum.html" style="color: white;">Impressum</a> | <a href="datenschutz.html" style="color: white;">Datenschutz</a></p>
-    </div>
-  </footer>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const searchInput = document.getElementById('search');
-      const glossarList = document.getElementById('glossar-list');
-      const items = Array.from(glossarList.getElementsByClassName('glossar-card'));
-      const sortButtons = document.querySelectorAll('.sort-btn');
-
-      // Suchfunktion
-      searchInput.addEventListener('input', function() {
-        const filter = this.value.toLowerCase();
-        let hasResults = false;
-        
-        items.forEach(item => {
-          const text = item.textContent.toLowerCase();
-          if (text.includes(filter)) {
-            item.style.display = '';
-            hasResults = true;
-          } else {
-            item.style.display = 'none';
-          }
-        });
-
-        // "Keine Ergebnisse"-Meldung anzeigen
-        const noResults = document.querySelector('.no-results');
-        if (!hasResults && !noResults) {
-          const noResultsElem = document.createElement('li');
-          noResultsElem.className = 'no-results';
-          noResultsElem.innerHTML = '<p>Keine Ergebnisse gefunden. Versuchen Sie einen anderen Suchbegriff.</p>';
-          glossarList.appendChild(noResultsElem);
-        } else if (hasResults && noResults) {
-          noResults.remove();
-        }
-      });
-
-      // Sortierfunktionen
-      function sortAZ() {
-        const sortedItems = items.sort((a, b) => {
-          const aTitle = a.querySelector('h3').textContent;
-          const bTitle = b.querySelector('h3').textContent;
-          return aTitle.localeCompare(bTitle);
-        });
-        
-        sortedItems.forEach(item => glossarList.appendChild(item));
-      }
-
-      function sortNewest() {
-        // Hier könnten Sie Daten aus einem Datenbank-Feld oder ähnlichem verwenden
-        const sortedItems = items.sort((a, b) => {
-          // Beispiel: Zufällige Reihenfolge für die Demo
-          return 0.5 - Math.random();
-        });
-        
-        sortedItems.forEach(item => glossarList.appendChild(item));
-      }
-
-      function sortPopular() {
-        // Hier könnten Sie Klickzahlen oder ähnliche Metriken verwenden
-        const sortedItems = items.sort((a, b) => {
-          // Beispiel: Zufällige Reihenfolge für die Demo
-          return 0.5 - Math.random();
-        });
-        
-        sortedItems.forEach(item => glossarList.appendChild(item));
-      }
-
-      // Sortier-Buttons
-      sortButtons.forEach(button => {
-        button.addEventListener('click', function() {
-          sortButtons.forEach(btn => btn.classList.remove('active'));
-          this.classList.add('active');
-          
-          switch(this.dataset.sort) {
-            case 'az': sortAZ(); break;
-            case 'newest': sortNewest(); break;
-            case 'popular': sortPopular(); break;
-          }
-        });
-      });
-
-      // Initiale Sortierung
-      sortAZ();
-    });
-  </script>
+  <footer><p>© 2025 ML Glossar</p></footer>
 </body>
 </html>
