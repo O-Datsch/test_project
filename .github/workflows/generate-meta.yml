@@ -25,6 +25,14 @@ jobs:
       - name: Generate HTML from Markdown
         run: node generate-html.js
 
+      - name: Zeige Inhalt von docs/
+        run: ls -l docs/
+
+      - name: Zeige Git Status
+        run: |
+          git status
+          git diff --stat
+
       - name: Generate Index page
         run: node generate-index.js
 
