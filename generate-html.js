@@ -33,13 +33,19 @@ fs.readdirSync(inputDir).forEach(file => {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="${data.description || ''}">
   <link rel="stylesheet" href="../css/styles.css">
+  <nav><a href="../index.html">Zurück zur Übersicht</a></nav>
 </head>
 <body>
+	<header><h1>ML Glossar</h1></header>
   <main class="container">
     ${body}
   </main>
+  <footer>
+    <p>© 2025 Dein Name</p>
+  </footer>
 </body>
-</html>`;
+</html>
+`;
 
     // Zieldatei
     const outName = data.filename || file.replace(/\.md$/, '.html');

@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import matter from 'gray-matter';
 import { marked } from 'marked';
 
 const contentDir = './markdown';
@@ -14,19 +15,21 @@ let listItems = '';
 const files = fs.readdirSync(contentDir).filter(f => f.endsWith('.md'));
 
 files.forEach(filename => {
-  const markdown = fs.readFileSync(path.join(contentDir, filename), 'utf8');
-  const html = marked(markdown);
+  const raw = fs.readFileSync(path.join(contentDir, filename), 'utf8');
+  const { data, content } = matter(raw); // ⬅️ Frontmatter wird ausgelesen
+  const html = marked(content);
 
-  const title = markdown.match(/^# (.+)/)?.[1] || 'Unbenannt';
-  const preview = markdown.split('\n').slice(1).join(' ').substring(0, 150);
+  const title = data.title || content.match(/^# (.+)/)?.[1] || 'Unbenannt';
+  const description = data.description || content.split('\n')[0];
+  const category = data.category || 'Allgemein';
   const slug = filename.replace('.md', '');
 
   listItems += `
     <li class="glossar-card">
       <a href="docs/${slug}.html">
         <h3>${title}</h3>
-        <p>${preview}</p>
-        <span class="category-tag">Allgemein</span>
+        <p>${description}</p>
+        <span class="category-tag">${category}</span>
       </a>
     </li>`;
 });
