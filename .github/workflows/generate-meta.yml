@@ -31,6 +31,7 @@ jobs:
       - name: Generate sitemap and robots.txt
         run: node generate-sitemap.js
 
+<<<<<<< HEAD
       - name: Commit and push generated files
         run: |
           git config --global user.name "github-actions[bot]"
@@ -43,3 +44,12 @@ jobs:
             git push
           else
             echo "✅ Keine Änderungen – nichts zu committen"
+=======
+    - name: Commit and push generated files
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git add docs/ sitemap.xml robots.txt
+        git commit -m "🔄 Auto-generated HTML and meta files"
+        git push || echo "No changes to commit"
+>>>>>>> 4b3389b3efc2ee8ff880848d473be5d5e665b34e
