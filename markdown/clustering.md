@@ -12,3 +12,5 @@ Beliebte Algorithmen:
 - Hierarchisches Clustering
 
 Wird verwendet zur Segmentierung von Kunden, Bildern u.v.m.
+
+bunu bunu
