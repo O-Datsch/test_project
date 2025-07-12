@@ -9,3 +9,4 @@ Die **PCA** ist eine Technik zur Reduktion der Dimensionalität. Sie projiziert 
 Sie ist hilfreich bei:
 - Visualisierung hochdimensionaler Daten
 - Vorverarbeitung für andere ML-Algorithmen
+- fgzj fghj ghnn
