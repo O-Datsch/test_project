@@ -1,7 +1,7 @@
 ---
 title: Regularisierung
 category: Optimierung
-filename: regularization.html
+filename: regularisation.html
 ---
 
 **Regularisierung** ist eine Technik, um Overfitting zu verhindern. Sie fügt dem Verlust eine Strafe hinzu, die große Gewichtswerte im Modell einschränkt.
